@@ -1,6 +1,10 @@
 {
 	"builders": [
 		{
+            "vboxmanage": [
+                ["modifyvm", "{{.Name}}", "--memory", "1536"],
+                ["modifyvm", "{{.Name}}", "--cpus", "4"]
+            ],
 			"name": "ubuntu-14.04.amd64.virtualbox",
 			"type": "virtualbox-iso",
 			"guest_os_type": "Ubuntu_64",
