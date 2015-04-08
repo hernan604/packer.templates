@@ -5,15 +5,15 @@
 			"type": "virtualbox-iso",
 			"guest_os_type": "Ubuntu_64",
 			"iso_urls": [
-				"http://releases.ubuntu.com/14.04/ubuntu-14.04-server-amd64.iso",
+				"http://br.releases.ubuntu.com/14.04/ubuntu-14.04.2-server-amd64.iso",
 				"http://nl.releases.ubuntu.com/14.04/ubuntu-14.04-server-amd64.iso"
 			],
-			"iso_checksum": "01545fa976c8367b4f0d59169ac4866c",
+			"iso_checksum": "83aabd8dcf1e8f469f3c72fff2375195",
 			"iso_checksum_type": "md5",
 			"ssh_username": "vagrant",
 			"ssh_password": "vagrant",
 			"http_directory": "../http/ubuntu/",
-			"headless": true,
+			"headless": false,
 			"boot_wait": "5s",
 			"boot_command": [
 				"<esc><esc><enter><wait>",
@@ -165,7 +165,9 @@
 						"../script/common/vagrant.sh",
 						"../script/common/vmware.sh",
 						"../script/common/motd.sh",
-						"../script/ubuntu/cleanup.sh"
+						"../script/ubuntu/cleanup.sh",
+                        "../script/common/database.sh",
+                        "../script/common/perlbrew.sh"
 					]
 				},
 				"ubuntu-14.04.i386.vmware": {
