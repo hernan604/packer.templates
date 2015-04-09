@@ -6,7 +6,7 @@ source ~/perl5/perlbrew/etc/bashrc
 echo 'source ~/perl5/perlbrew/etc/bashrc' >> ~/.bashrc
 perlbrew init
 perlbrew -j 4 install 5.21.9
-perlbrew switch 5.20.1
+perlbrew switch 5.21.9
 perlbrew install-cpanm
 cpanm Selenium::Remote::Driver JSON::XS File::Slurp MIME::Base64 Digest::SHA1
 cpanm Config::Any Moo Mojo::Pg SQL::Abstract DDP POE::Component::Server::IRC
